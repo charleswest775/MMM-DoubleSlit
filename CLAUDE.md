@@ -2,7 +2,7 @@
 
 Charles's MagicMirror² module: the double-slit experiment one photon at a time (stripes build from random dots), and with the slits watched (no stripes), for his hallway mirror, as one page in a
 rotation of pages. Made on 2026-09-29, one of five new pages (with MMM-StandardMap, MMM-ChaoticWaterwheel, MMM-Sandpile, MMM-Harmonograph),
-with the same shell as its siblings.
+with the same shell as its siblings. On the mirror since 2026-09-30.
 
 ## Files
 
@@ -30,7 +30,7 @@ spirit with the sibling modules (MMM-ChaosTheory, MMM-LorenzAttractor, MMM-Doubl
 
 ## Cost on the Pi
 
-Not measured yet. Expected ~40% of a core while the batches come (≤ 5 changes/s, most of the canvas each), nothing once done at 42 s. Measure before relying on it.
+Measured on the Pi, 2026-09-30 (900², 20 fps, Electron + cage over a 45 s page): doubleSlit 36%, whichPath 38% of a core; hidden 0.2%.
 
 ## Performance findings on the Pi (measured)
 

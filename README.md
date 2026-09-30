@@ -124,10 +124,19 @@ lands its 80,000 photons in 42 s, changing the canvas at most five times a secon
 
 ## Performance
 
-Not yet measured on the Pi. What it's designed to cost: the apparatus is drawn once. The dots
-land all over the screen, so a batch changes most of the canvas, but the canvas changes at most
-eight times a second (at first, one photon at a time, far less), and not at all once the picture
-is done at 42 s. Expect a third of a core or less while it builds.
+Measured on a Raspberry Pi 3 B+ (Electron 42, software rendering), 900×900 at 20 fps, as CPU of
+the Electron processes plus the `cage` compositor, in % of one core (the Pi has four), traced a
+quarter of a second at a time over a 45 s page; the mirror between pages: 0.2%.
+
+| | % of one core |
+|---|---|
+| module **hidden** (e.g. another MMM-pages page) | 0.2 |
+| `doubleSlit`, over a 45 s showing | 36 |
+| `whichPath`, the same | 38 |
+
+The apparatus is drawn once. The dots land all over the screen, so a batch changes most of the
+canvas, but the canvas changes at most five times a second (at first, one photon at a time, each
+a tiny change), and not at all once the picture is done at 42 s.
 
 Why it is drawn this way, from micro-benchmarks on the Pi:
 
