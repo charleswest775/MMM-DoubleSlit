@@ -1,0 +1,26 @@
+{
+  "name": "mmm-doubleslit",
+  "version": "1.0.0",
+  "description": "MagicMirror² module: the double-slit experiment one photon at a time, fringes built from random dots, and gone when the slits are watched, drawn for a Raspberry Pi without a GPU.",
+  "main": "MMM-DoubleSlit.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "MagicMirror",
+    "quantum mechanics",
+    "double slit",
+    "interference",
+    "photon",
+    "wave-particle duality",
+    "physics",
+    "optics",
+    "animation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charleswest775/MMM-DoubleSlit.git"
+  },
+  "author": "Charles West",
+  "license": "MIT"
+}
